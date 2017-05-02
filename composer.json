@@ -1,0 +1,17 @@
+{
+  "name": "marcusmyers/laravel-docker-skeleton",
+  "description": "A laravel app skeleton that uses docker",
+  "keywords": ["laravel", "docker", "docker-compose"],
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Mark Myers",
+      "email": "marcusmyers@gmail.com"
+    }
+  ],
+  "require": {
+    "laravel/laravel": "^5.4",
+    "predis/predis": "^1.1"
+  }
+}
