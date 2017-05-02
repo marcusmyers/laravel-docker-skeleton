@@ -11,7 +11,11 @@
     }
   ],
   "require": {
-    "laravel/laravel": "^5.4",
     "predis/predis": "^1.1"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "laravel new"
+    ]
   }
 }
