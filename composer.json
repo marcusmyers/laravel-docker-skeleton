@@ -16,7 +16,9 @@
   },
   "scripts": {
     "post-create-project-cmd": [
-      "laravel new"
+      "laravel new",
+      "php -r \"copy('.env.docker', '.env');\"",
+      "php artisan key:generate"
     ]
   }
 }
