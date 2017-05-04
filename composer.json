@@ -18,7 +18,7 @@
     "post-create-project-cmd": [
       "laravel new",
       "php -r \"copy('.env.docker', '.env');\"",
-      "php -r \"file_put_contents(\"routes/web.php\", \"Route::get(\"/status\", function () {\n\t$dbstatus = \"\";\n$http_code = 200;\n$arr_options = [];\nif(getenv('MYSQL_SSL_CA')) {\n$arr_options = [ PDO::MYSQL_ATTR_SSL_CA => getenv('MYSQL_SSL_CA') ];\n}try {$database_handle = new PDO(\"mysql:host=\".getenv('DB_HOST').\";dbname=\".getenv('DB_DATABASE'),getenv('DB_USERNAME'),getenv('DB_PASSWORD'),$arr_options);$dbstatus = 'connected';} catch (PDOException $e) {$dbstatus = 'disconnected';$http_code = 503;}header($_SERVER[\"SERVER_PROTOCOL\"] . ' ' . $http_code, true, $http_code);header('Content-type: application/json');echo json_encode(['healthy' => ($http_code == 200 && $dbstatus == 'connected' ? true : false),'message' => ($http_code == 200 && $dbstatus == 'connected' ? 'success' : 'error')]);});\", FILE_APEND);\"",
+      "php -r \"copy('.web.php', 'routes/web.php');\"",
       "php artisan key:generate"
     ]
   }
