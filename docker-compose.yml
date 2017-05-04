@@ -22,8 +22,12 @@ services:
       MYSQL_DATABASE: $DB_DATABASE
       MYSQL_USER: $DB_USERNAME
       MYSQL_PASSWORD: $DB_PASSWORD
+    ports:
+      - 33060:3306
     volumes:
       - db-data:/var/lib/mysql
 
   redis:
     image: redis
+    ports:
+      - 63790:6379
