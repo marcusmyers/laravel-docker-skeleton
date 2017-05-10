@@ -25,3 +25,12 @@ $ composer create-project marcusmyers/laravel-docker-skeleton ./my-project
 $ cd my-project
 $ docker-compose up -d
 ```
+
+## Technologies
+
+### Docker Images
+
+* Base Image
+  [marcusmyers/laravel](https://github.com/marcusmyers/dockerfiles/blob/master/laravel/Dockerfile)
+* Mysql [mysql:latest](https://hub.docker.com/_/mysql/)
+* Redis [redis:latest](https://hub.docker.com/_/redis/)
