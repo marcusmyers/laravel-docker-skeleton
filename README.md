@@ -15,6 +15,15 @@ to get started.
 > Windows](https://www.docker.com/docker-windows) depending on your
 > operating system.
 
+## Technologies
+
+### Docker Images
+
+* Base Image
+  [marcusmyers/laravel](https://github.com/marcusmyers/dockerfiles/blob/master/laravel/Dockerfile)
+* Mysql [mysql:latest](https://hub.docker.com/_/mysql/)
+* Redis [redis:latest](https://hub.docker.com/_/redis/)
+
 ## Usage
 
 To get started with a laravel project with docker built in create your
